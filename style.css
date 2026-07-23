@@ -1,12 +1,17 @@
 
 @font-face {
     font-family: humane;
-    src: url(./ASSETS/Humane-Bold.otf);
+    src: url(./ASSETS/Humane-Bold.woff2);
+    src: url(./ASSETS/Humane-Bold.woff);
 }
 
 @font-face {
     font-family: corin;
     src: url(./ASSETS/Corinthia-Regular.ttf);
+}
+@font-face {
+    font-family:gilroyo;
+    src: url(./ASSETS/Gilroy-ExtraBold.woff);
 }
 
 * {
@@ -64,7 +69,7 @@ body {
     width: 95%;
     height: 8vh;
     color: #ffffff;
-    font-family: gilroy;
+    font-family: gilroyo;
     font-size: 14vw;
     position: absolute;
     top: calc(2% + 25vh - 4vh);
