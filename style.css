@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: humane;
     src: url(./ASSETS/Humane-Bold.otf);
@@ -8,44 +9,43 @@
     src: url(./ASSETS/Corinthia-Regular.ttf);
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    -webkit-text-size-adjust:100%;
-    text-size-adjust:100%;
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
-body{
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
+
 html,
 body {
     width: 100%;
     height: 100%;
 }
-#main{
+
+#main {
     width: 100%;
     height: 100dvh;
-    background-color:#ffffff;
+    background-color: #ffffff;
     position: relative;
     overflow: hidden;
 }
-.card{
+
+.card {
     display: none;
 }
-.hero{
+
+.hero {
     width: 95%;
-    height: 28dvh;
+    height: 28vh;
     background-color: rgba(240, 248, 255, 0.493);
     position: absolute;
     top: 2%;
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     background-image: url(./ASSETS/image00002.webp);
     background-size: cover;
     background-position: center;
@@ -54,85 +54,88 @@ body {
     color: #ffd7e6;
     font-family: montserrat;
     font-size: 4vw;
-
 }
-.hero h3{
+
+.hero h3 {
     font-weight: 300;
 }
-.name-txt{
+
+.name-txt {
     width: 95%;
     height: 8vh;
-    
     color: #ffffff;
-    font-family:gilroy;
-    font-size:14vw;
+    font-family: gilroy;
+    font-size: 14vw;
     position: absolute;
     top: calc(2% + 25vh - 4vh);
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
-.support-txt{
+
+.support-txt {
     position: absolute;
     bottom: 2%;
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     width: 100%;
     /* background-color: rgb(156, 156, 224); */
-    height: 30dvh;
+    height: 30vh;
     color: rgb(28, 10, 19);
     display: flex;
     align-items: flex-end;
     justify-content: center;
     font-family: humane;
     font-size: clamp(2.2rem, 27.5vw, 11rem);
-    line-height:0.6;
-
+    line-height: 28vw;
 }
-.support-txt h1{
+
+.support-txt h1 {
     font-weight: 700;
 }
-.support-txt span{
+
+.support-txt span {
     display: inline-block;
     opacity: 0;
     transform: translateY(30px);
 }
-.small-head-container{
+
+.small-head-container {
     width: 100%;
-    height: 3dvh;
+    height: 3vh;
     background-color: #8E2071;
     top: 33vh;
     position: absolute;
-   
 }
-.small-head{
+
+.small-head {
     width: 300%;
     height: 100%;
     color: #ffffff;
-    font-family:montserrat;
+    font-family: montserrat;
     font-size: 2vw;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2vw;
 }
-.small-head h3{
+
+.small-head h3 {
     white-space: nowrap;
     font-weight: 500;
 }
-.click{
+
+.click {
     width: 40%;
-    height: 8dvh;
+    height: 8vh;
     background-color: rgb(48, 8, 26);
     border-radius: 15vw;
     position: absolute;
     bottom: 25%;
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,12 +143,14 @@ body {
     color: #ffffff;
     font-size: 4vw;
 }
-.click h3{
+
+.click h3 {
     font-weight: 500;
 }
-.support-para{
+
+.support-para {
     width: 100%;
-    height: 20dvh;
+    height: 20vh;
     /* background-color: red; */
     position: absolute;
     top: 37vh;
@@ -155,86 +160,97 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1vw;
-
 }
-.para1{
+
+.para1 {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:center;
-    font-size: clamp(0.5rem,4vw,1rem);
+    justify-content: center;
+    font-size: clamp(0.5rem, 4vw, 1rem);
     font-family: montserrat;
     color: #8E2071;
     padding: 0vw 2vw;
     text-align: center;
-
 }
-.para1 h3{
+
+.para1 h3 {
     width: 90%;
 }
-.para1 span{
+
+.para1 span {
     font-style: italic;
     color: rgb(33, 6, 29);
     white-space: nowrap;
     font-family: corin;
-    font-size: clamp(2rem,4vw,2.2rem);
+    font-size: clamp(2rem, 4vw, 2.2rem);
 }
-.para2{
-        width: 100%;
+
+.para2 {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content:center;
-    font-size: clamp(0.5rem,4vw,1rem) ;
-    font-family:montserrat;
+    justify-content: center;
+    font-size: clamp(0.5rem, 4vw, 1rem);
+    font-family: montserrat;
     color: #3e001d;
     padding: 0vw 2vw;
     text-align: center;
 }
-.para2 h4{
+
+.para2 h4 {
     width: 90%;
 }
 
-@media screen and (min-width: 400px) and (max-width: 750px) {
+@media screen and (min-width: 470px) and (max-width: 750px) {
     .hero {
         font-size: 3vw;
         padding: 3vw;
-        height: 35dvh;
+        height: 35vh;
     }
-    .card{
+
+    .card {
         display: none;
     }
-    .name-txt{
-    top: calc(2% + 35vh - 8vh);
-        
+
+    .name-txt {
+        top: calc(2% + 35vh - 8vh);
     }
-    .small-head-container{
+
+    .small-head-container {
         top: 40vh;
-        height: 5dvh;
+        height: 5vh;
     }
+
     .name-txt h1 {
         font-size: 24vw;
     }
-   
+
     .support-txt h1 {
         font-size: 12rem;
-        line-height: 0.6;
+        line-height: 15vw;
     }
+
     .para1,
     .para2 {
         font-size: clamp(0.7rem, 3vw, 1.1rem);
         padding: 0vw 4vw;
     }
+
     .para1 span {
         font-size: clamp(1.5rem, 3vw, 2rem);
     }
+
     .support-para {
-        height: 18dvh;
+        height: 18vh;
         gap: 2vw;
         top: 47vh;
     }
+
     .small-head-container .small-head h3 {
         font-size: 1.1rem;
     }
+
     .click h3 {
         font-size: 1.15rem;
     }
@@ -244,41 +260,51 @@ body {
     .hero {
         font-size: 2.4vw;
         padding: 2.8vw;
-        height: 38dvh;
+        height: 38vh;
     }
-    .card{
+
+    .card {
         display: none;
     }
+
     .name-txt {
-        top: calc(2% + 38dvh - 8dvh);
+        top: calc(2% + 38vh - 8vh);
     }
-    .small-head-container{
-        top: 42dvh;
-        height: 4dvh;
+
+    .small-head-container {
+        top: 42vh;
+        height: 4vh;
     }
+
     .name-txt h1 {
         font-size: 20vw;
     }
+
     .support-txt h1 {
-        font-size: 11rem;
-        line-height: 0.5;
+        font-size: 15rem;
+        line-height: 14vw;
     }
+
     .para1,
     .para2 {
         font-size: clamp(0.9rem, 2.2vw, 1.3rem);
         padding: 0vw 3vw;
     }
+
     .para1 span {
         font-size: clamp(1.5rem, 2.2vw, 2rem);
     }
+
     .support-para {
         height: 14vh;
         gap: 1.5vw;
-        top: 49dvh;
+        top: 49vh;
     }
+
     .small-head-container .small-head h3 {
         font-size: 1.3rem;
     }
+
     .click h3 {
         font-size: 1.28rem;
     }
@@ -290,55 +316,63 @@ body {
         width: 100%;
         font-size: 2vw;
         padding: 2vw;
-        height: 45dvh;
+        height: 45vh;
         border-radius: 0vw;
         background-position: 0% 36%;
     }
+
     .name-txt {
-        top: calc(2% + 4dvh - 12dvh);
+        top: calc(2% + 45vh - 12vh);
     }
+
     .small-head-container {
-        top: 47dvh;
-        height: 5dvh;
+        top: 47vh;
+        height: 5vh;
     }
+
     .name-txt h1 {
         font-size: 18vw;
     }
+
     .support-txt h1 {
         font-size: 12rem;
         line-height: 7.5vw;
         gap: 0vw;
     }
+
     .para1,
     .para2 {
         font-size: clamp(1rem, 1.8vw, 1.4rem);
         /* padding: 0vw 5vw; */
-       
         justify-content: flex-start;
-      
         width: 40%;
-        text-align:justify;
-
+        text-align: justify;
     }
+
     .para1 span {
         font-size: clamp(1.4rem, 2vw, 1.7rem);
     }
+
     .support-para {
         height: 11vh;
         gap: 1vw;
-        top: 62dvh;
+        top: 62vh;
         align-items: flex-start;
     }
+
     .small-head-container .small-head h3 {
         font-size: 1.6rem;
     }
-    .click{
-     display: none;
+
+    .click {
+        display: none;
     }
+
     .click h3 {
         font-size: 1.4rem;
     }
-    .card{
+
+    .card {
         width: 15vw;
         height: 15vw;
         background-color: rgb(50, 6, 41);
@@ -349,13 +383,12 @@ body {
         align-items: center;
         justify-content: center;
         padding: 0.5vw;
-      
     }
-    .card img{
+
+    .card img {
         object-fit: contain;
         object-position: center;
         width: 100%;
         height: 100%;
     }
 }
-
