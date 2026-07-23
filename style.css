@@ -52,7 +52,7 @@ body {
 .name-txt{
     width: 95%;
     height: 8vh;
-    /* background-color: #b93a3a; */
+    
     color: #ffffff;
     font-family:gilroy;
     font-size:14vw;
@@ -79,8 +79,8 @@ body {
     align-items: flex-end;
     justify-content: center;
     font-family: humane;
-    font-size: 28vw;
-    line-height: 29vw;
+    font-size: clamp(2.2rem, 27.5vw, 11rem);
+    line-height: 28vw;
 
 }
 .support-txt h1{
@@ -182,4 +182,138 @@ body {
 }
 .para2 h4{
     width: 90%;
+}
+
+@media screen and (min-width: 470px) and (max-width: 750px) {
+    .hero {
+        font-size: 3vw;
+        padding: 3vw;
+        height: 35vh;
+    }
+    .name-txt{
+    top: calc(2% + 35vh - 8vh);
+        
+    }
+    .small-head-container{
+        top: 40vh;
+        height: 5vh;
+    }
+    .name-txt h1 {
+        font-size: 24vw;
+    }
+   
+    .support-txt h1 {
+        font-size: 12rem;
+        line-height: 15vw;
+    }
+    .para1,
+    .para2 {
+        font-size: clamp(0.7rem, 3vw, 1.1rem);
+        padding: 0vw 4vw;
+    }
+    .para1 span {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+    .support-para {
+        height: 18vh;
+        gap: 2vw;
+        top: 47vh;
+    }
+    .small-head-container .small-head h3 {
+        font-size: 1.1rem;
+    }
+    .click h3 {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 950px) {
+    .hero {
+        font-size: 2.4vw;
+        padding: 2.8vw;
+        height: 38vh;
+    }
+    .name-txt {
+        top: calc(2% + 38vh - 8vh);
+    }
+    .small-head-container{
+        top: 42vh;
+        height: 4vh;
+    }
+    .name-txt h1 {
+        font-size: 20vw;
+    }
+    .support-txt h1 {
+        font-size: 15rem;
+        line-height: 14vw;
+    }
+    .para1,
+    .para2 {
+        font-size: clamp(0.9rem, 2.2vw, 1.3rem);
+        padding: 0vw 3vw;
+    }
+    .para1 span {
+        font-size: clamp(1.5rem, 2.2vw, 2rem);
+    }
+    .support-para {
+        height: 14vh;
+        gap: 1.5vw;
+        top: 49vh;
+    }
+    .small-head-container .small-head h3 {
+        font-size: 1.3rem;
+    }
+    .click h3 {
+        font-size: 1.28rem;
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1950px) {
+    .hero {
+        top: 0%;
+        width: 100%;
+        font-size: 2vw;
+        padding: 2vw;
+        height: 45vh;
+        border-radius: 0vw;
+        background-position: 0% 36%;
+    }
+    .name-txt {
+        top: calc(2% + 45vh - 12vh);
+    }
+    .small-head-container {
+        top: 47vh;
+        height: 5vh;
+    }
+    .name-txt h1 {
+        font-size: 18vw;
+    }
+    .support-txt h1 {
+        font-size: 13rem;
+        line-height: 7.5vw;
+        gap: 0vw;
+    }
+    .para1,
+    .para2 {
+        font-size: clamp(1rem, 1.8vw, 1.4rem);
+        padding: 0vw 5vw;
+    }
+    .para1 span {
+        font-size: clamp(1.4rem, 2vw, 1.7rem);
+    }
+    .support-para {
+        height: 11vh;
+        gap: 1vw;
+        top: 53vh;
+    }
+    .small-head-container .small-head h3 {
+        font-size: 1.6rem;
+    }
+    .click{
+        width: 20%;
+        bottom: 23%;
+    }
+    .click h3 {
+        font-size: 1.4rem;
+    }
 }

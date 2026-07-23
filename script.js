@@ -31,14 +31,14 @@ tl.from(".name-txt h1", {
   ease: "power2.out"
 }, "-=0.8")
 .from(".para1", {
-  x: -30,
+  y: 30,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
   ease: "power2.out"
 }, "-=1.4")
 .from(".para2", {
-  x: -30,
+  y: 30,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
