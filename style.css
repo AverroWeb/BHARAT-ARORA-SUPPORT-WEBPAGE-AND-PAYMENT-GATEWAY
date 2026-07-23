@@ -57,7 +57,7 @@ body {
     font-family:gilroy;
     font-size:14vw;
     position: absolute;
-    top: calc(2% + 25vh - 5vh);
+    top: calc(2% + 25vh - 4vh);
     left: 50%;
     transform: translate(-50%,0%);
     display: flex;
@@ -138,7 +138,7 @@ body {
     height: 20vh;
     /* background-color: red; */
     position: absolute;
-    top: 42vh;
+    top: 37vh;
     pointer-events: none;
     display: flex;
     flex-direction: column;
@@ -151,15 +151,16 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:flex-start;
+    justify-content:center;
     font-size: clamp(0.5rem,4vw,1rem);
     font-family: montserrat;
     color: #8E2071;
     padding: 0vw 2vw;
+    text-align: center;
 
 }
 .para1 h3{
-    width: 50%;
+    width: 90%;
 }
 .para1 span{
     font-style: italic;
@@ -172,12 +173,13 @@ body {
         width: 100%;
     display: flex;
     align-items: center;
-    justify-content:flex-start;
+    justify-content:center;
     font-size: clamp(0.5rem,4vw,1rem) ;
     font-family:montserrat;
     color: #3e001d;
     padding: 0vw 2vw;
+    text-align: center;
 }
 .para2 h4{
-    width: 50%;
+    width: 90%;
 }
