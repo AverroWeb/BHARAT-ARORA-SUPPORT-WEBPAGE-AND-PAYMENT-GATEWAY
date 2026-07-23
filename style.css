@@ -15,7 +15,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
 html,
 body {
     width: 100%;
@@ -33,7 +40,7 @@ body {
 }
 .hero{
     width: 95%;
-    height: 28vh;
+    height: 28dvh;
     background-color: rgba(240, 248, 255, 0.493);
     position: absolute;
     top: 2%;
@@ -76,14 +83,14 @@ body {
     transform: translate(-50%,0%);
     width: 100%;
     /* background-color: rgb(156, 156, 224); */
-    height: 30vh;
+    height: 30dvh;
     color: rgb(28, 10, 19);
     display: flex;
     align-items: flex-end;
     justify-content: center;
     font-family: humane;
     font-size: clamp(2.2rem, 27.5vw, 11rem);
-    line-height: 28vw;
+    line-height:0.6;
 
 }
 .support-txt h1{
@@ -96,7 +103,7 @@ body {
 }
 .small-head-container{
     width: 100%;
-    height: 3vh;
+    height: 3dvh;
     background-color: #8E2071;
     top: 33vh;
     position: absolute;
@@ -119,7 +126,7 @@ body {
 }
 .click{
     width: 40%;
-    height: 8vh;
+    height: 8dvh;
     background-color: rgb(48, 8, 26);
     border-radius: 15vw;
     position: absolute;
@@ -138,7 +145,7 @@ body {
 }
 .support-para{
     width: 100%;
-    height: 20vh;
+    height: 20dvh;
     /* background-color: red; */
     position: absolute;
     top: 37vh;
@@ -187,11 +194,11 @@ body {
     width: 90%;
 }
 
-@media screen and (min-width: 470px) and (max-width: 750px) {
+@media screen and (min-width: 400px) and (max-width: 750px) {
     .hero {
         font-size: 3vw;
         padding: 3vw;
-        height: 35vh;
+        height: 35dvh;
     }
     .card{
         display: none;
@@ -202,7 +209,7 @@ body {
     }
     .small-head-container{
         top: 40vh;
-        height: 5vh;
+        height: 5dvh;
     }
     .name-txt h1 {
         font-size: 24vw;
@@ -210,7 +217,7 @@ body {
    
     .support-txt h1 {
         font-size: 12rem;
-        line-height: 15vw;
+        line-height: 0.6;
     }
     .para1,
     .para2 {
@@ -221,7 +228,7 @@ body {
         font-size: clamp(1.5rem, 3vw, 2rem);
     }
     .support-para {
-        height: 18vh;
+        height: 18dvh;
         gap: 2vw;
         top: 47vh;
     }
@@ -237,24 +244,24 @@ body {
     .hero {
         font-size: 2.4vw;
         padding: 2.8vw;
-        height: 38vh;
+        height: 38dvh;
     }
     .card{
         display: none;
     }
     .name-txt {
-        top: calc(2% + 38vh - 8vh);
+        top: calc(2% + 38dvh - 8dvh);
     }
     .small-head-container{
-        top: 42vh;
-        height: 4vh;
+        top: 42dvh;
+        height: 4dvh;
     }
     .name-txt h1 {
         font-size: 20vw;
     }
     .support-txt h1 {
-        font-size: 15rem;
-        line-height: 14vw;
+        font-size: 11rem;
+        line-height: 0.5;
     }
     .para1,
     .para2 {
@@ -267,7 +274,7 @@ body {
     .support-para {
         height: 14vh;
         gap: 1.5vw;
-        top: 49vh;
+        top: 49dvh;
     }
     .small-head-container .small-head h3 {
         font-size: 1.3rem;
@@ -283,16 +290,16 @@ body {
         width: 100%;
         font-size: 2vw;
         padding: 2vw;
-        height: 45vh;
+        height: 45dvh;
         border-radius: 0vw;
         background-position: 0% 36%;
     }
     .name-txt {
-        top: calc(2% + 45vh - 12vh);
+        top: calc(2% + 4dvh - 12dvh);
     }
     .small-head-container {
-        top: 47vh;
-        height: 5vh;
+        top: 47dvh;
+        height: 5dvh;
     }
     .name-txt h1 {
         font-size: 18vw;
@@ -319,7 +326,7 @@ body {
     .support-para {
         height: 11vh;
         gap: 1vw;
-        top: 62vh;
+        top: 62dvh;
         align-items: flex-start;
     }
     .small-head-container .small-head h3 {
