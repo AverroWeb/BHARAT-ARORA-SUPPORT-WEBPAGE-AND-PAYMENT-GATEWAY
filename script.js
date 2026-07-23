@@ -74,7 +74,7 @@ tl.from(".card", {
 document.querySelector('.click').addEventListener('click', function () {
   this.style.backgroundColor = '#911a6d';
   this.style.color = '#f6dee7';
-  window.location.href = "upi://pay?pa=bhr8t2@ptyes&pn=SK%20Ashiq&cu=INR&tn=Payment";
+  a.href = "upi://pay?pa=bhr8t2@ptyes&cu=INR&tn=Support";
 });
 
 
