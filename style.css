@@ -28,6 +28,9 @@ body {
     position: relative;
     overflow: hidden;
 }
+.card{
+    display: none;
+}
 .hero{
     width: 95%;
     height: 28vh;
@@ -190,6 +193,9 @@ body {
         padding: 3vw;
         height: 35vh;
     }
+    .card{
+        display: none;
+    }
     .name-txt{
     top: calc(2% + 35vh - 8vh);
         
@@ -232,6 +238,9 @@ body {
         font-size: 2.4vw;
         padding: 2.8vw;
         height: 38vh;
+    }
+    .card{
+        display: none;
     }
     .name-txt {
         top: calc(2% + 38vh - 8vh);
@@ -289,14 +298,20 @@ body {
         font-size: 18vw;
     }
     .support-txt h1 {
-        font-size: 13rem;
+        font-size: 12rem;
         line-height: 7.5vw;
         gap: 0vw;
     }
     .para1,
     .para2 {
         font-size: clamp(1rem, 1.8vw, 1.4rem);
-        padding: 0vw 5vw;
+        /* padding: 0vw 5vw; */
+       
+        justify-content: flex-start;
+      
+        width: 40%;
+        text-align:justify;
+
     }
     .para1 span {
         font-size: clamp(1.4rem, 2vw, 1.7rem);
@@ -304,16 +319,36 @@ body {
     .support-para {
         height: 11vh;
         gap: 1vw;
-        top: 53vh;
+        top: 62vh;
+        align-items: flex-start;
     }
     .small-head-container .small-head h3 {
         font-size: 1.6rem;
     }
     .click{
-        width: 20%;
-        bottom: 23%;
+     display: none;
     }
     .click h3 {
         font-size: 1.4rem;
     }
+    .card{
+        width: 15vw;
+        height: 15vw;
+        background-color: rgb(50, 6, 41);
+        position: absolute;
+        bottom: 17%;
+        right: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5vw;
+      
+    }
+    .card img{
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
 }
+

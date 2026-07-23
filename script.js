@@ -64,12 +64,19 @@ tl.from(".click", {
   ease: "linear",
    
 },"<");
+tl.from(".card", {
+  opacity:0,
+ duration: 1,  
+ ease: "linear",
+  
+},"<");
 
 document.querySelector('.click').addEventListener('click', function () {
   this.style.backgroundColor = '#911a6d';
   this.style.color = '#f6dee7';
   window.location.href = "upi://pay?pa=bhr8t2@ptyes&pn=SK%20Ashiq&cu=INR&tn=Payment";
 });
+
 
 
 
